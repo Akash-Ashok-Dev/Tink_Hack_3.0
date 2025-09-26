@@ -81,8 +81,9 @@ p {
 }
 
 .navbar .logo img {
-    width: 28px;
-    width: 28px;
+    width: 40px;
+    width: 40px;
+    border-radius: 7px;
 }
 
 .navbar .contents {
@@ -91,7 +92,7 @@ p {
       gap: 20px;
     }
 
-.navbar a{
+.navbar .contents a{
     text-decoration: none;  
     color: black;
     padding: 10px 15px;
@@ -100,12 +101,26 @@ p {
     transition: transform 0.2s ease;
 }
 
-.navbar a:hover{
+.navbar .contents :hover{
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     background: silver;
 }
 
+.navbar .right a{
+    text-decoration: none;  
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.navbar .right :hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: silver;
+}
 .navbar .right {
       display: flex;
       align-items: center;
@@ -144,4 +159,35 @@ p {
 
 #eventDescriptionIntro {
   font-size: 19px;
+}
+
+/* Projects */
+#projectGrid {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.eventCard {
+  width: 900px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #1a1a1a; /* Dark background like your image */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.eventCard:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.eventCard a {
+  color: #06b6d4;
+  text-decoration: none;
 }
