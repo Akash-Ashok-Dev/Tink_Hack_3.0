@@ -290,6 +290,41 @@ p {
   padding: 10px;
 }
 
+/* Sponsors */
+.sponsors{
+  text-align: center;
+}
+#sponsorsHeading{
+  color: #a78bfa;;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#sponsorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+.sponsorCard {
+  width: auto;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #1a1a1a; /* Dark background like your image */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sponsorCardImg {
+  width: 50%;
+  height: 180px;
+  object-fit: cover;
+}
+
 /* Contact */
 .contact{
   text-align: center;
