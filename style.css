@@ -168,7 +168,9 @@ p {
 
 #discoverTinkerHub{
   color: #a78bfa;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* EventOverview */
@@ -188,7 +190,8 @@ p {
 
 #eventOverviewHeading{
   color: #a78bfa;;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .eventCard {
@@ -209,9 +212,115 @@ p {
   background: #222;
 }
 
-.card-img {
+.eventCardImg {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
+/* Timeline */
+.timeline {
+  align-items: center;
+  text-align: center;
+}
+#timelineHeading{
+  color: #a78bfa;;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#timelineGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  text-align: center;
+  left: 50%;
+}
+
+.timeCard {
+  display: flex;      
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center;    
+  gap: 10px;             
+  width: auto;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #1a1a1a; /* Dark background like your image */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeCard:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+.activity{
+  display: flex;      
+  gap: 10px;           
+  margin-right: auto;
+}
+
+.activityInfo {
+  display: flex;      
+  gap: 10px;           
+  margin-left: auto;
+}
+
+/*Registration */
+.registration{
+  text-align: center;
+}
+
+#registrationHeading{
+  color: #a78bfa;;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#registrationLink {
+  text-decoration: none;
+  background-color: rgb(60, 0, 255);
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+/* Contact */
+.contact{
+  text-align: center;
+}
+#contactHeading{
+  color: #a78bfa;;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+.contactCard {
+  width: auto;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #1a1a1a; /* Dark background like your image */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contactCardImg {
+  width: 50%;
+  height: 180px;
+  object-fit: cover;
+}
